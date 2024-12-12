@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Navbar</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <img class="Faiz" src="faiz food.webp" alt="">
+            <!-- <div class="logo">FF.Food</div> -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        
+    
+        <script>
+            // JavaScript for mobile menu toggle
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+    
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        </script>
+    </body>
+    </html>
+    
+    <main>
+        <section>
+            <h2>Our Special Dishes\ Faiz Food</h2>
+            <p>Delicious food made just for you!</p>
+            <section class="main-image">
+                <img src="main 5.jfif" alt="Delicious Food" class="img-responsive">
+            </section>
+            <!-- <section id="menu">
+                <h2>Our Menu</h2>
+                <div class="menu-item">
+                    <img src="bur 2.webp" alt="Burger" class="menu-image">
+                    <div class="item-details">
+                        <h3>Cheese Burger</h3>
+                        <p class="description">A delicious cheeseburger with all the best ingredients.</p>
+                        <p class="price">$5.99</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="pizza.jpg" alt="Pizza" class="menu-image">
+                    <div class="item-details">
+                        <h3>Margherita Pizza</h3>
+                        <p class="description">A classic Margherita pizza with fresh basil and mozzarella.</p>
+                        <p class="price">$8.99</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="pasta.jpg" alt="Pasta" class="menu-image">
+                    <div class="item-details">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p class="description">Creamy carbonara pasta with bacon and parmesan.</p>
+                        <p class="price">$7.99</p>
+                    </div>
+                </div>
+            </section>
+            
+        </section> -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="bur 1.jpg" alt="Burger" class="menu-image">
+                    <h3>Cheese Burger</h3>
+                    <p class="price">$5.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="bur 2.webp" alt="Pizza" class="menu-image">
+                    <h3>Marger Pizza</h3>
+                    <p class="price">$8.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="bur 3.jpg" alt="Pasta" class="menu-image">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p class="price">$7.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="bur 4.jpg" alt="Salad" class="menu-image">
+                    <h3>Caesar Salad</h3>
+                    <p class="price">$4.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="bur 5.jpg" alt="Sushi" class="menu-image">
+                    <h3>Sushi Rolls</h3>
+                    <p class="price">$10.99</p>
+                    
+                </div>
+                <div class="menu-item">
+                    <img src="bur6.webp" alt="Sushi" class="menu-image">
+                    <h3>Sushi Rolls</h3>
+                    <p class="price">$10.99</p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="special-menu-section">
+            <h2 class="special-menu-title">Our Special Menu</h2>
+            <p class="special-menu-description">Try our delicious and unique dishes that you won’t find anywhere else!</p>
+            
+            <div class="special-menu-item">
+                <img src="bur 7.webp" alt="Dish 1" class="menu-image">
+                <h3 class="menu-name">Grilled Chicken Delight</h3>
+                <p class="menu-description">A mouth-watering grilled chicken served with fresh vegetables and our special sauce.</p>
+                <p class="menu-price">$15.99</p>
+            </div>
+            
+            <div class="special-menu-item">
+                <img src="bur 8.jpg" alt="Dish 2" class="menu-image">
+                <h3 class="menu-name">Veggie Supreme</h3>
+                <p class="menu-description">A healthy combination of fresh veggies, topped with cheese and grilled to perfection.</p>
+                <p class="menu-price">$12.99</p>
+            </div>
+            
+            <div class="special-menu-item">
+                <img src="bur 9.jpg" alt="Dish 3" class="menu-image">
+                <h3 class="menu-name">Spicy Seafood Pasta</h3>
+                <p class="menu-description">A spicy, flavorful seafood pasta with a blend of fresh herbs and creamy sauce.</p>
+                <p class="menu-price">$18.99</p>
+            </div>
+        </section>
+        
+        <section class="offer-section">
+            <div class="offer-card">
+                <h2>Special Offer!</h2>
+                <p>Get <strong>50% Off</strong> on <span class="offer-item">Pizza</span> this weekend!</p>
+                <button class="offer-btn">Order Now</button>
+            </div>
+        </section>
+        <section class="contact-form-section">
+            <h2>Place Your Order</h2>
+            <form class="contact-form" action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+                <label for="order">Your Order:</label>
+                <textarea id="order" name="order" placeholder="Describe your order here" rows="5" required></textarea>
+    
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </section>
+        
+        
+    </main>
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>
