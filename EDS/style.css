@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f7fc;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #f2f7fc;
+    color: #4A90E2;
+    padding: 20px 0;
+    border-bottom: 2px solid #e4e4e4;
+    animation: fadeIn 2s ease-in-out;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+header .logo img {
+    width: 150px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+
+    .logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #234ca5;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: #ff6f00;
+}
+
+.section {
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    animation: slideIn 1.5s ease-out;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #234ca5;
+}
+
+/* Button Styles */
+.animated-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff6f00, #ff9400);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.animated-btn:hover {
+    background: linear-gradient(90deg, #e65a00, #ff6f00);
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #234ca5;
+    color: #fff;
+    animation: fadeInUp 1.5s;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons div {
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-icons i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
