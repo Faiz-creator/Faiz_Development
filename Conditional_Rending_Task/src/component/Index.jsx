@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import pic1 from "../assets/pic1.png";
+import pic2 from "../assets/pic2.png";
 
 const Index = () => {
+  const [showButton, setShowButton] = useState(false);
   return (
     <div className="main ">
       <nav
@@ -36,9 +38,15 @@ const Index = () => {
           </div>
         </div>
         <dic className="flex  w-520 h-60 ">
-          <img src={pic1} alt="" />
+          {showButton ? <img src={pic1} alt="" /> : <img src={pic2} alt="" />}
           <div className="bg-black text-white text-center rounded-md w-24 h-8 mt-72 mr-20  hover:bg-yellow-50 cursor-pointer hover:text-black hover:border-2 hover:border-black hover:scale-110 ease-out duration-700  active:bg-rose-950 ">
-            <button>Change</button>
+            <button
+              onClick={() => {
+                setShowButton(!showButton);
+              }}
+            >
+              Change
+            </button>
           </div>
         </dic>
       </main>
